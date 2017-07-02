@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: CCD Antennas from UR5MED
+title: CCD Antennas UR5MED
 email: ur5med73@gmail.com
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
