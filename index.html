@@ -1,23 +1,29 @@
 ---
 layout: default
+title: Photography
 ---
 
-<div class="home">
+<h1>{{ page.title }}</h1>
 
-  <h1 class="page-heading">Posts</h1>
+<p>Below are two example galleries. The first gallery illustrates basic usage. The second gallery illustrate how to include several image galleries into one entry to create more complex structures and tell better stories.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% assign count = 0 %}
+{% assign elements_per_row = 2 %}
+{% assign align = "left" %}
+{% for gallery in site.data.galleries.overview %}
+{% if count == 0 %}<div class="row">{% endif %}
+  <div class="half-width gallery-preview {{ align }}">
+    <h3>{{ gallery.title }}</h3>
+    <a href="{{ site.baseurl }}/photography/{{ gallery.directory }}.html">
+      <img alt="{{ gallery.title }}" src="{{ site.baseurl }}/assets/photography/{% if gallery.image_path %}{{ gallery.image_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
+    </a>
+  </div>
+{% if count == 1 %}</div>{% endif %}
+{% assign count = count | plus: 1 %}
+{% assign align = "right" %}
+{% if count >= elements_per_row %} {% assign align = "left" %} {% assign count = 0 %} {% endif %}
+{% endfor %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% for i in (count..elements_per_row) %}
+<div class="half-width gallery-preview"></div>
+{% endfor %}
