@@ -10,11 +10,8 @@
   <link rel="canonical" href="{{ site.baseurl }}/{{ page.url | replace:'index.html','' }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/{{ "feed.xml" }}">
 
-  {% if page.support contains 'jquery' %}
   <script src="{{ site.baseurl }}/assets/jquery/dist/jquery.min.js"></script>
-  {% endif %}
-
-  {% if page.support contains 'gallery' %}
+  
   <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
   <script src="{{ site.baseurl }}/assets/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 
@@ -25,5 +22,5 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/{{ "css/gallery.css" }}" />
   <script src="{{ site.baseurl }}/assets/picturefill/dist/picturefill.min.js"></script>
   <script src="{{ site.baseurl }}/assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  {% endif %}
+
 </head>
