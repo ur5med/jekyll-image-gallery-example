@@ -14,11 +14,11 @@ pictures:
   original: 03.jpg
   thumbnail: 03.jpg
 - filename: 04
-  original: 04.jpg
-  thumbnail: 04.jpg
+  original: 04.png
+  thumbnail: 04.png
 - filename: 05
-  original: 05.jpg
-  thumbnail: 05.jpg
+  original: 05.png
+  thumbnail: 05.png
 - filename: 06
   original: 06.jpg
   thumbnail: 06.jpg
@@ -38,11 +38,11 @@ pictures:
   original: 11.jpg
   thumbnail: 11.jpg
 - filename: 12
-  original: 12.jpg
-  thumbnail: 12.jpg
+  original: 12.png
+  thumbnail: 12.png
 - filename: 13
-  original: 13.jpg
-  thumbnail: 13.jpg
+  original: 13.png
+  thumbnail: 13.png
 - filename: 14
   original: 14.jpg
   thumbnail: 14.jpg
