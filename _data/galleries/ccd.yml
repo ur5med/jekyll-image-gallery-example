@@ -1,18 +1,9 @@
 picture_path: ccd
 preview:
-  filename: 01
+  filename: 04
   original: 01.jpg
   thumbnail: 01.jpg
 pictures:
-- filename: 01
-  original: 01.jpg
-  thumbnail: 01.jpg
-- filename: 02
-  original: 02.jpg
-  thumbnail: 02.jpg
-- filename: 03
-  original: 03.jpg
-  thumbnail: 03.jpg
 - filename: 04
   original: 04.png
   thumbnail: 04.png
@@ -22,18 +13,9 @@ pictures:
 - filename: 06
   original: 06.jpg
   thumbnail: 06.jpg
-- filename: 07
-  original: 07.jpg
-  thumbnail: 07.jpg
 - filename: 08
   original: 08.jpg
   thumbnail: 08.jpg
-- filename: 09
-  original: 09.jpg
-  thumbnail: 09.jpg
-- filename: 10
-  original: 10.jpg
-  thumbnail: 10.jpg
 - filename: 11
   original: 11.jpg
   thumbnail: 11.jpg
@@ -46,6 +28,19 @@ pictures:
 - filename: 14
   original: 14.jpg
   thumbnail: 14.jpg
-- filename: 15
-  original: 15.jpg
-  thumbnail: 15.jpg
+- filename: 16
+  original: 16.jpg
+  thumbnail: 16.jpg
+- filename: 17
+  original: 17.jpg
+  thumbnail: 17.jpg
+- filename: 18
+  original: 18.jpg
+  thumbnail: 18.jpg
+- filename: 19
+  original: 19.jpg
+  thumbnail: 19.jpg
+- filename: 20
+  original: 20.jpg
+  thumbnail: 20.jpg
+
